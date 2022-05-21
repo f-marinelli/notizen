@@ -36,7 +36,7 @@ export default function Home({ articoli }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(
     'https://notizen-e76c1-default-rtdb.firebaseio.com/articoli.json'
   );
