@@ -1,8 +1,9 @@
 import Articolo from '../components/Articolo';
+import Link from 'next/link';
 
 export default function Home({ articoli }) {
   const listaArticoli = articoli.map((art, i) => (
-    <Articolo key={i} testo={art.testo} titolo={art.titolo} />
+    <Articolo key={i} id={i} testo={art.testo} titolo={art.titolo} />
   ));
 
   return (
